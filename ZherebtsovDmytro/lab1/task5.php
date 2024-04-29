@@ -1,5 +1,5 @@
 <?php
-
+// Lab1 task5
 function randomCharacter() // нажаль також повертає рашкові букви
 {
     $unicode_code = mt_rand(0x410, 0x42F);

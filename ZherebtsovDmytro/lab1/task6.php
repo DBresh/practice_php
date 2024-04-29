@@ -1,4 +1,5 @@
 <?php
+// Lab1 task6
 $numbers = [(string) rand(100, 999), "якийсь текст", rand(100, 999), rand(100, 999), rand(100, 999), rand(100, 999), rand(100, 999)];
 
 function summOfDigits($number): ?int
