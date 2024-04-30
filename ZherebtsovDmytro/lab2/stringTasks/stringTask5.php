@@ -9,8 +9,6 @@
 // якщо він містить принаймні одну велику літеру, одну малу літеру, одну цифру та 
 // один спеціальний символ, і його довжина є не менше 8 символів.
 
-// random_int(), random(str)
-
 $keys = [
     "bigChars" => "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     "smallChars" => "abcdefghijklmnopqrstuvwxyz",
