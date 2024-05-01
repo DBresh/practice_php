@@ -32,8 +32,6 @@
 
 <?php
 
-var_dump($_POST);
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     session_start();
     foreach ($_POST as $key => $value) { // перебрати ключі і значення масиву _POST

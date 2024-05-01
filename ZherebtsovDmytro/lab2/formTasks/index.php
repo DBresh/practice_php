@@ -38,6 +38,30 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
                 break;
             }
         }
+        setcookie("lang", $_GET['lang'], time() + 3600 * 24 * 30 * 6);
+    }
+}
+
+if (isset($_COOKIE['lang'])) {
+    $language = $_COOKIE["lang"];
+    $isLanguage = true;
+    switch ($language) {
+        case "ukr": {
+            $language = "Українська";
+            break;
+        }
+        case "eng": {
+            $language = "Англійська";
+            break;
+        }
+        case "ger": {
+            $language = "Німецька";
+            break;
+        }
+        case "fr": {
+            $language = "Французька";
+            break;
+        }
     }
 }
 
