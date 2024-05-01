@@ -46,7 +46,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
-
     if (isset($games)) {
         $translated = [
             "Футбол" => "football",

@@ -18,27 +18,9 @@ session_start();
 $isLanguage = false;
 if ($_SERVER['REQUEST_METHOD'] === "GET") {
     if (isset($_GET["lang"])) {
-        $language = $_GET["lang"];
-        $isLanguage = true;
-        switch ($language) {
-            case "ukr": {
-                $language = "Українська";
-                break;
-            }
-            case "eng": {
-                $language = "Англійська";
-                break;
-            }
-            case "ger": {
-                $language = "Німецька";
-                break;
-            }
-            case "fr": {
-                $language = "Французька";
-                break;
-            }
-        }
         setcookie("lang", $_GET['lang'], time() + 3600 * 24 * 30 * 6);
+        header("Location: index.php");
+        die;
     }
 }
 

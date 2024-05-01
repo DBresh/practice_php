@@ -15,12 +15,13 @@
     $words2 = explode(" ", $words2);
 
     if ($_SERVER['REQUEST_METHOD'] === "POST") {
+        var_dump($_POST);
         foreach ($_POST as $key => $value) { // перебрати ключі і значення масиву _POST
             if (strlen($_POST[$key]) > 0) { // якщо довжина значення ключа більша за 0 (дефакто, встановлена)
                 if (str_starts_with($key, "delete")) {
                     deleteFile($key);
                 } else {
-                    $key($words1, $words2); // !!!!!!!!!!!!!!!!!
+                    $key($words1, $words2); // автоматичний визов методу
                 }
             }
         }

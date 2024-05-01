@@ -21,7 +21,7 @@
         if (isset($_GET["fs"])) {
             setcookie("fs", $_GET["fs"], time() + 3600 * 5);
             header("Location: index.php"); // працює і без подвійної переадресації, але
-            die;                           // оставив щоб видалити зміну fs з url
+            die;                           // оставив щоб видалити змінну fs з url
         }
     }
 

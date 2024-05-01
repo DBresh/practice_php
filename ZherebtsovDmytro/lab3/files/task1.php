@@ -25,9 +25,7 @@
     $comments = explode("\n", $comments);
     for ($i = count($comments) - 1; $i > -1; $i--) {
         if ($comments[$i] === '') {
-            array_pop($comments);
-        } else {
-            break;
+            array_pop($comments); // якщо елемент порожній, видалити його
         }
     }
     ?>
