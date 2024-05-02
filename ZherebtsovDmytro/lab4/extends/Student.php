@@ -64,14 +64,4 @@ class Student extends Human
         $this->StudentId = $this->StudentId + 1000;
         $this->Course++;
     }
-
-    public function cleanKitchen(): string
-    {
-        return "Студент прибрав кухню.";
-    }
-
-    public function cleanRoom(): string
-    {
-        return "Студент прибрав кімнату.";
-    }
 }
