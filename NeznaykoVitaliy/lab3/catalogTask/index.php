@@ -9,6 +9,9 @@ if (isset($_POST['login']) && isset($_POST['passwordUsers'])) {
         mkdir($login . '/music');
         mkdir($login . '/photo');
         echo "Папка створена успішно.";
+        file_put_contents($login . "/video/video.txt", "video");
+        file_put_contents($login . "/music/music.txt", "music");
+        file_put_contents($login . "/photo/photo.txt", "photo");
     } else {
         echo "Папка з таким ім'ям вже існує.";
     }
