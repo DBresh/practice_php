@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 5 Task 2</title>
+    <title>Lab 5 Task 3</title>
 
     <?php
     // оскільки розробляв з використанням динаміки, код цього завдання повністю скопійований з минулого
